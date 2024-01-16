@@ -9,15 +9,15 @@ test("mysteries 1", () => {
 
     expect(
         myObj.a
-    ).toBe('aDwa');
+    ).toBe('aDwa'); // tu zmieniamy wartosc zmiennej myObj
 });
 
 test("mysteries 1", () => {
     const myObj = { a: 'initialValue' };
 
-    alterObj2(myObj);
+    alterObj2(myObj); 
 
     expect(
         myObj
-    ).toBe(myObj);
+    ).toBe(myObj); // tu nie ruszamy oryginalnego obiektu, bo przekazujemy referencje do obiektu, a nie obiekt (to nie VisualBasic and ByRef)
 });
