@@ -1,13 +1,13 @@
 const modFib = require("./modified-fibonacci");
 
-test("1", () => {
+test("modifiedFibonacci 1", () => {
     expect(modFib(0, 1, 3)).toBe(true);
 });
 
-test("2", () => {
+test("modifiedFibonacci 2", () => {
     expect(modFib(0, 1, 6)).toBe(false);
 });
 
-test("3", () => {
+test("modifiedFibonacci 3", () => {
     expect(modFib(5, 10, 25)).toBe(true);
 });
